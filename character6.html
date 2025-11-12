@@ -12,18 +12,18 @@
 <body>
   <!-- 스플래시 화면 -->
   <div id="splash-screen">
-    <img src="/assets/popup.png" alt="AR Photo 시작" class="splash-image">
+    <img src="./assets/popup.png" alt="AR Photo 시작" class="splash-image">
   </div>
   
   <!-- 배경음악 -->
   <audio id="background-music" preload="auto" loop>
-    <source src="/assets/back.mp3" type="audio/mpeg">
+    <source src="./assets/back.mp3" type="audio/mpeg">
     Your browser does not support the audio element.
   </audio>
   
   <!-- 캐릭터 등장 효과음 -->
   <audio id="character-appear-sound" preload="auto">
-    <source src="/assets/open.mp3" type="audio/mpeg">
+    <source src="./assets/open.mp3" type="audio/mpeg">
     Your browser does not support the audio element.
   </audio>
   
@@ -40,28 +40,28 @@
     
     <!-- 빛줄기 효과 -->
     <div id="light-beam">
-      <img src="/assets/characters/light.png" alt="빛줄기" />
+      <img src="./assets/characters/light.png" alt="빛줄기" />
     </div>
     
     <!-- 4번 캐릭터 전용 바닥 이미지 (고정) -->
     <div id="character-ground" class="character-ground" style="display: none;">
-      <img src="/assets/characters/c4_ground.png" alt="바닥" />
+      <img src="./assets/characters/c4_ground.png" alt="바닥" />
     </div>
     
     <div id="character" data-photo-guidance="해천길과 아리랑길, 예술이 흐르는 거리마다 숨겨진 빛의 조각들을 만나게 될 거야. 밀양 곳곳에 예술 공간들을 천천히 걸어보게.">
-      <img src="/assets/characters/c6.png" alt="금오" onerror="this.src='/assets/characters/c6.png'" />
+      <img src="./assets/characters/c6.png" alt="금오" onerror="this.src='./assets/characters/c6.png'" />
     </div>
 
     <div id="character-guide" aria-hidden="true">
-      <img src="/assets/guide.png" alt="캐릭터 조작 가이드" />
+      <img src="./assets/guide.png" alt="캐릭터 조작 가이드" />
     </div>
 
     <div id="controls">
         <button class="btn btn-primary" id="capture-btn">
-          <img src="/assets/characters/camera2.png" alt="사진 찍기" class="camera-icon">
+          <img src="./assets/characters/camera2.png" alt="사진 찍기" class="camera-icon">
         </button>
         <button class="btn btn-secondary" id="camera-switch-btn">
-          <img src="/assets/camera_back.png" alt="카메라 전환" class="camera-switch-icon">
+          <img src="./assets/camera_back.png" alt="카메라 전환" class="camera-switch-icon">
         </button>
       <button class="btn" id="retake-btn" style="display: none;">🔄 다시 찍기</button>
     </div>
@@ -98,10 +98,10 @@
     <!-- 하단 액션 버튼 -->
     <div id="photo-actions">
       <button class="action-btn retake-btn" id="retake-btn">
-        <img src="/assets/reTake.png" alt="다시 찍기" class="action-icon">
+        <img src="./assets/reTake.png" alt="다시 찍기" class="action-icon">
       </button>
       <button class="action-btn save-btn" id="save-btn">
-        <img src="/assets/save.png" alt="저장하기" class="action-icon">
+        <img src="./assets/save.png" alt="저장하기" class="action-icon">
       </button>
     </div>
   </div>
@@ -111,7 +111,7 @@
     window.characterData = {
       id: 6,
       name: '금오',
-      image: '/assets/characters/c6.png',
+      image: './assets/characters/c6.png',
       greeting: {
         title: '나는 금오.',
         message: '세상의 균형과 넓은 시야를 품은 존재지. 밀양의 산과 길, 사람들의 이야기를 굽어보며, 나와 함께 이 순간을 사진을 남겨보자.'

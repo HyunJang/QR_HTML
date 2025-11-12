@@ -12,18 +12,18 @@
 <body>
   <!-- 스플래시 화면 -->
   <div id="splash-screen">
-    <img src="/assets/popup.png" alt="AR Photo 시작" class="splash-image">
+    <img src="./assets/popup.png" alt="AR Photo 시작" class="splash-image">
   </div>
   
   <!-- 배경음악 -->
   <audio id="background-music" preload="auto" loop>
-    <source src="/assets/back.mp3" type="audio/mpeg">
+    <source src="./assets/back.mp3" type="audio/mpeg">
     Your browser does not support the audio element.
   </audio>
   
   <!-- 캐릭터 등장 효과음 -->
   <audio id="character-appear-sound" preload="auto">
-    <source src="/assets/open.mp3" type="audio/mpeg">
+    <source src="./assets/open.mp3" type="audio/mpeg">
     Your browser does not support the audio element.
   </audio>
   
@@ -40,28 +40,28 @@
     
     <!-- 빛줄기 효과 -->
     <div id="light-beam">
-      <img src="/assets/characters/light.png" alt="빛줄기" />
+      <img src="./assets/characters/light.png" alt="빛줄기" />
     </div>
     
     <!-- 4번 캐릭터 전용 바닥 이미지 (고정) -->
     <div id="character-ground" class="character-ground" style="display: none;">
-      <img src="/assets/characters/c4_ground.png" alt="바닥" />
+      <img src="./assets/characters/c4_ground.png" alt="바닥" />
     </div>
     
     <div id="character" data-photo-guidance="내 고향, 밀양 무안과 표충사에는 나의 흔적과 사당, 유물이 남아있네. 밀양의 시장 골목길도 꼭 걸어보게.">
-      <img src="/assets/characters/c1.png" alt="사명대사" onerror="this.src='/assets/characters/c1.png'" />
+      <img src="./assets/characters/c1.png" alt="사명대사" onerror="this.src='./assets/characters/c1.png'" />
     </div>
 
     <div id="character-guide" aria-hidden="true">
-      <img src="/assets/guide.png" alt="캐릭터 조작 가이드" />
+      <img src="./assets/guide.png" alt="캐릭터 조작 가이드" />
     </div>
 
     <div id="controls">
         <button class="btn btn-primary" id="capture-btn">
-          <img src="/assets/characters/camera2.png" alt="사진 찍기" class="camera-icon">
+          <img src="./assets/characters/camera2.png" alt="사진 찍기" class="camera-icon">
         </button>
         <button class="btn btn-secondary" id="camera-switch-btn">
-          <img src="/assets/camera_back.png" alt="카메라 전환" class="camera-switch-icon">
+          <img src="./assets/camera_back.png" alt="카메라 전환" class="camera-switch-icon">
         </button>
       <button class="btn" id="retake-btn" style="display: none;">🔄 다시 찍기</button>
     </div>
@@ -98,10 +98,10 @@
     <!-- 하단 액션 버튼 -->
     <div id="photo-actions">
       <button class="action-btn retake-btn" id="retake-btn">
-        <img src="/assets/reTake.png" alt="다시 찍기" class="action-icon">
+        <img src="./assets/reTake.png" alt="다시 찍기" class="action-icon">
       </button>
       <button class="action-btn save-btn" id="save-btn">
-        <img src="/assets/save.png" alt="저장하기" class="action-icon">
+        <img src="./assets/save.png" alt="저장하기" class="action-icon">
       </button>
     </div>
   </div>
@@ -111,7 +111,7 @@
     window.characterData = {
       id: 1,
       name: '사명대사',
-      image: '/assets/characters/c1.png',
+      image: './assets/characters/c1.png',
       greeting: {
         title: '나는 사명대사.',
         message: '임진왜란 당시, 의승군을 이끌고 나라를 지킨 승병장이지. 밀양 무안에서 나고 자라, 이 땅을 지키는 길에 앞장섰네. 자네의 지혜와 용기를 함께 담아 사진을 남겨보자.'

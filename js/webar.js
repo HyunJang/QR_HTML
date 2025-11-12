@@ -409,7 +409,7 @@ class WebARExperience {
     const img = document.getElementById('camera-speech-image');
     const charId = (window.characterData && window.characterData.id) || this.getCharacterId();
     if (bubble && img) {
-      const src = `/assets/characters/c${charId}_before.png`;
+      const src = `./assets/characters/c${charId}_before.png`;
       // 이미지가 로드된 뒤에 강제로 표시 (모바일 표시 안정화)
       const showBubble = () => {
         bubble.classList.add('show');
@@ -1598,7 +1598,7 @@ class WebARExperience {
     const img = document.getElementById('result-speech-image');
     const charId = (window.characterData && window.characterData.id) || this.getCharacterId();
     if (bubble && img) {
-      const src = `/assets/characters/c${charId}_after.png`;
+      const src = `./assets/characters/c${charId}_after.png`;
       
       // 애니메이션 제거
       bubble.style.animation = 'none';
@@ -1792,7 +1792,7 @@ class WebARExperience {
     const cameraSpeechImage = document.getElementById('camera-speech-image');
     if (cameraSpeechImage) {
       const charId = (window.characterData && window.characterData.id) || this.getCharacterId();
-      const beforeSrc = `/assets/characters/c${charId}_before.png`;
+      const beforeSrc = `./assets/characters/c${charId}_before.png`;
       // 현재 _after.png인 경우 _before.png로 변경
       if (cameraSpeechImage.src.includes('_after.png')) {
         cameraSpeechImage.src = beforeSrc + '?t=' + Date.now();

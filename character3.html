@@ -12,18 +12,18 @@
 <body>
   <!-- 스플래시 화면 -->
   <div id="splash-screen">
-    <img src="/assets/popup.png" alt="AR Photo 시작" class="splash-image">
+    <img src="./assets/popup.png" alt="AR Photo 시작" class="splash-image">
   </div>
   
   <!-- 배경음악 -->
   <audio id="background-music" preload="auto" loop>
-    <source src="/assets/back.mp3" type="audio/mpeg">
+    <source src="./assets/back.mp3" type="audio/mpeg">
     Your browser does not support the audio element.
   </audio>
   
   <!-- 캐릭터 등장 효과음 -->
   <audio id="character-appear-sound" preload="auto">
-    <source src="/assets/open.mp3" type="audio/mpeg">
+    <source src="./assets/open.mp3" type="audio/mpeg">
     Your browser does not support the audio element.
   </audio>
   
@@ -40,28 +40,28 @@
     
     <!-- 빛줄기 효과 -->
     <div id="light-beam">
-      <img src="/assets/characters/light.png" alt="빛줄기" />
+      <img src="./assets/characters/light.png" alt="빛줄기" />
     </div>
     
     <!-- 4번 캐릭터 전용 바닥 이미지 (고정) -->
     <div id="character-ground" class="character-ground" style="display: none;">
-      <img src="/assets/characters/c4_ground.png" alt="바닥" />
+      <img src="./assets/characters/c4_ground.png" alt="바닥" />
     </div>
     
     <div id="character" data-photo-guidance="무봉사에는 전통 속 태극 문양이 깃들어 있어. 무안의 고즈넉한 길을 걷다 보면 다시 만날 수 있을지도 몰라.">
-      <img src="/assets/characters/c3.png" alt="태극나비" onerror="this.src='/assets/characters/c3.png'" />
+      <img src="./assets/characters/c3.png" alt="태극나비" onerror="this.src='./assets/characters/c3.png'" />
     </div>
 
     <div id="character-guide" aria-hidden="true">
-      <img src="/assets/guide.png" alt="캐릭터 조작 가이드" />
+      <img src="./assets/guide.png" alt="캐릭터 조작 가이드" />
     </div>
 
     <div id="controls">
         <button class="btn btn-primary" id="capture-btn">
-          <img src="/assets/characters/camera2.png" alt="사진 찍기" class="camera-icon">
+          <img src="./assets/characters/camera2.png" alt="사진 찍기" class="camera-icon">
         </button>
         <button class="btn btn-secondary" id="camera-switch-btn">
-          <img src="/assets/camera_back.png" alt="카메라 전환" class="camera-switch-icon">
+          <img src="./assets/camera_back.png" alt="카메라 전환" class="camera-switch-icon">
         </button>
       <button class="btn" id="retake-btn" style="display: none;">🔄 다시 찍기</button>
     </div>
@@ -98,10 +98,10 @@
     <!-- 하단 액션 버튼 -->
     <div id="photo-actions">
       <button class="action-btn retake-btn" id="retake-btn">
-        <img src="/assets/reTake.png" alt="다시 찍기" class="action-icon">
+        <img src="./assets/reTake.png" alt="다시 찍기" class="action-icon">
       </button>
       <button class="action-btn save-btn" id="save-btn">
-        <img src="/assets/save.png" alt="저장하기" class="action-icon">
+        <img src="./assets/save.png" alt="저장하기" class="action-icon">
       </button>
     </div>
   </div>
@@ -111,7 +111,7 @@
     window.characterData = {
       id: 3,
       name: '태극나비',
-      image: '/assets/characters/c3.png',
+      image: './assets/characters/c3.png',
       greeting: {
         title: '나는 태극의 기운을 품은 나비야.',
         message: '시간과 공간을 넘어, 이 여정의 끝에서 너를 기다렸지. 너의 빛을 내 날개에 담아 함께 사진을 남겨보자.'
