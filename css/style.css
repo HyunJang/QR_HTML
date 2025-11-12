@@ -302,10 +302,6 @@
     z-index: 20;
   }
   
-  #character.interactive {
-    /* transform은 JavaScript에서 제어하므로 CSS에서 정의하지 않음 */
-  }
-  
   #character img {
     width: 100%;
     height: 100%;
@@ -313,6 +309,7 @@
     pointer-events: none;
     touch-action: none;
     -webkit-user-select: none;
+  user-select: none;
     -webkit-touch-callout: none;
   }
 
@@ -470,40 +467,45 @@
     object-fit: contain;
   }
   
-  #capture-btn,
-  #camera-switch-btn {
-    background: transparent !important;
-    border: none !important;
-    box-shadow: none !important;
-    outline: none !important;
-    padding: 0;
-    width: 110px;
-    height: 110px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    min-width: 0;
-    min-height: 0;
-    transition: none !important;
-    transform: none !important;
-    filter: none !important;
-  }
-  
-  #capture-btn::before {
-    content: none !important;
-  }
-  
-  #capture-btn:hover,
-  #capture-btn:focus,
-  #capture-btn:active,
-  #camera-switch-btn:hover,
-  #camera-switch-btn:focus,
-  #camera-switch-btn:active {
-    transform: none !important;
-    box-shadow: none !important;
-    filter: none !important;
-    outline: none !important;
-  }
+#capture-btn,
+#camera-switch-btn {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  outline: none !important;
+  padding: 0;
+  width: 110px;
+  height: 110px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 0;
+  min-height: 0;
+  transition: none !important;
+  transform: none !important;
+  filter: none !important;
+  backdrop-filter: none !important;
+  -webkit-tap-highlight-color: transparent;
+}
+
+#capture-btn::before,
+#camera-switch-btn::before {
+  content: none !important;
+}
+
+#capture-btn:hover,
+#capture-btn:focus,
+#capture-btn:active,
+#camera-switch-btn:hover,
+#camera-switch-btn:focus,
+#camera-switch-btn:active {
+  transform: none !important;
+  box-shadow: none !important;
+  filter: none !important;
+  outline: none !important;
+  background: transparent !important;
+  transition: none !important;
+}
   
   .btn-primary { background: transparent; color: white; border: none; box-shadow: none; }
   
